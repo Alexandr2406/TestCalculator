@@ -1,9 +1,7 @@
 public class Converter {
 
     public static String roman(int n) {
-        if (n <= 0) {//если число меньше 0, то кидаем исключение
-            throw new IllegalArgumentException("отрицательные римские числа не допускаются по заданию");
-        }
+
         StringBuilder buf = new StringBuilder();
 
         final RomaNum[] values = RomaNum.values();
